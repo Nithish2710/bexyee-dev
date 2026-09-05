@@ -487,6 +487,7 @@ export async function getProductExperienceData(
     }
   }
 
+
   const effectivePurchaseMode: PurchaseMode =
     launchSettings.purchaseMode ||
     enrichedProduct.purchase_mode ||
