@@ -1,0 +1,3 @@
+export function DetailGallery() {
+  return <section className="gallery"><div className="gallery-title"><span className="accent">DETAILS /</span><h2>BUILT FOR<br />THE CITY.</h2></div><div className="detail detail-red"><span>01 / SCREEN PRINT</span><b>ಝ</b></div><div className="detail detail-grid"><span>02 / WEIGHT</span><b>240<br />GSM</b></div><div className="detail detail-label"><span>03 / LABEL SYSTEM</span><b>BEXYEE<br /><em>BLR—001</em></b></div><div className="detail detail-seam"><span>04 / FINISH</span><b>NO<br />SHORTCUTS.</b></div></section>;
+}

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="stageGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#242220" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0b0b0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fabricShade" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b1a"/>
+      <stop offset="50%" stop-color="#141312"/>
+      <stop offset="100%" stop-color="#0d0d0c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1200" fill="url(#stageGlow)"/>
+
+  <!-- Right Profile / Sleeve Focus -->
+  <g filter="url(#shadow)">
+    <path d="M580 220 C540 250 440 250 400 220 L240 320 C220 340 230 380 260 420 L420 820 C440 860 480 860 520 820 L640 480 L640 960 C640 990 660 1000 690 1000 L740 1000 L740 340 Z" fill="url(#fabricShade)" stroke="#2a2826" stroke-width="2"/>
+    
+    <!-- Sleeve Drop Shoulder Seam -->
+    <path d="M480 235 Q500 350 520 440" stroke="#0a0908" stroke-width="6" stroke-linecap="round" fill="none"/>
+    
+    <!-- Right Sleeve Edition Woven Tag -->
+    <g transform="translate(400, 520) rotate(-15)">
+      <rect x="-60" y="-20" width="120" height="40" fill="#18181b" stroke="#3f3f46" stroke-width="2" rx="2"/>
+      <text x="0" y="5" font-family="monospace" font-size="11" font-weight="900" fill="#f4f1eb" text-anchor="middle" letter-spacing="2">001 / 100</text>
+    </g>
+  </g>
+</svg>

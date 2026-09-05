@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1200" width="100%" height="100%">
+  <defs>
+    <radialGradient id="stageGlow" cx="50%" cy="45%" r="60%">
+      <stop offset="0%" stop-color="#242220" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#0b0b0a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="fabricShade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1c1b1a"/>
+      <stop offset="50%" stop-color="#141312"/>
+      <stop offset="100%" stop-color="#0d0d0c"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="25" stdDeviation="30" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <rect width="1000" height="1200" fill="url(#stageGlow)"/>
+
+  <!-- T-Shirt Front Silhouette -->
+  <g filter="url(#shadow)">
+    <!-- Main Body & Sleeves -->
+    <path d="M340 220 C390 260 610 260 660 220 L860 320 C890 335 880 390 840 430 L760 480 L730 400 L730 960 C730 990 710 1000 680 1000 L320 1000 C290 1000 270 990 270 960 L270 400 L240 480 L160 430 C120 390 110 335 140 320 Z" fill="url(#fabricShade)" stroke="#2a2826" stroke-width="2"/>
+    
+    <!-- Collar Rib -->
+    <path d="M340 220 C420 280 580 280 660 220 C620 250 380 250 340 220 Z" fill="#252321" stroke="#383532" stroke-width="3"/>
+    
+    <!-- Subtle Fabric Drape Folds -->
+    <path d="M300 480 Q320 680 290 880" stroke="#090908" stroke-width="12" stroke-linecap="round" opacity="0.4" fill="none"/>
+    <path d="M700 480 Q680 680 710 880" stroke="#090908" stroke-width="12" stroke-linecap="round" opacity="0.4" fill="none"/>
+    <path d="M420 340 Q500 400 580 340" stroke="#0a0908" stroke-width="6" stroke-linecap="round" opacity="0.3" fill="none"/>
+    
+    <!-- Minimalist Front Print / Chest Branding -->
+    <text x="360" y="380" font-family="monospace" font-size="14" font-weight="900" fill="#f4f1eb" letter-spacing="4">BEXYEE</text>
+    <text x="360" y="405" font-family="monospace" font-size="10" font-weight="500" fill="#a8a29e" letter-spacing="2">EDITION 001 // BENGALURU</text>
+    
+    <!-- Signature Red Signal Tag -->
+    <rect x="270" y="920" width="8" height="32" fill="#e52b20"/>
+  </g>
+</svg>

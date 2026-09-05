@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" preserveAspectRatio="xMidYMid slice">
+  <rect width="1920" height="1080" fill="#090909"/>
+  <path d="M-100 900C280 760 560 900 780 790S1330 650 2020 820v300H-100Z" fill="#151515"/>
+  <path d="M-120 955C380 800 590 1015 950 840s590-130 1060 40" fill="none" stroke="#5e201e" stroke-width="5" opacity=".8"/>
+  <path d="M-80 1010C330 870 600 1080 960 920s670-120 1080 60" fill="none" stroke="#c43b30" stroke-width="2" opacity=".45"/>
+  <g fill="none" stroke="#3d3b38" stroke-width="3" opacity=".8">
+    <path d="M220 720V400l105-125 105 125v320M520 720V340l140-170 140 170v380M1150 710V290l170-160 170 160v420M1570 730V390l120-90 120 90v340"/>
+    <path d="M325 275h-80m475 65H575m745-210h-100m560 260h-95"/>
+    <path d="M225 465h215M520 440h280M1150 390h340M1570 490h240" opacity=".5"/>
+  </g>
+  <g fill="#aaa49b" opacity=".45" font-family="monospace" font-size="28">
+    <text x="120" y="250">ಮಳೆ ನಂತರ</text><text x="1510" y="255">ಬೆಂಗಳೂರು</text><text x="690" y="560">ನಗರ / 001</text>
+  </g>
+  <g fill="none" stroke="#c7bdb0" stroke-width="5" opacity=".55"><path d="M0 870h240l90-55h230l85-75h250"/><path d="M1920 860h-260l-90-65h-180l-115-85"/><path d="M900 1080l130-270"/></g>
+  <g opacity=".75"><circle cx="1650" cy="320" r="34" fill="#e52b20"/><circle cx="1650" cy="320" r="85" fill="none" stroke="#e52b20" stroke-width="2" opacity=".38"/><path d="M1650 355v220" stroke="#e52b20" stroke-width="3" opacity=".35"/></g>
+  <g fill="#e9e1d5" font-family="monospace" font-size="16" letter-spacing="6" opacity=".6"><text x="84" y="1000">BEXYEE / SIGNAL AFTER RAIN / BENGALURU</text><text x="1440" y="1010">12.9716 N / 77.5946 E</text></g>
+</svg>

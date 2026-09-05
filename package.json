@@ -1,0 +1,35 @@
+{
+  "name": "bexyee-store",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "test": "node --test tests/bexyee_2_1_specification.test.mjs tests/store.test.mjs tests/concurrency.test.mjs tests/hostile_production_review.test.mjs tests/performance_benchmark.test.mjs tests/real_world_validation.test.mjs tests/asset_and_campaign_control.test.mjs tests/additive_sitemap_and_content.test.mjs tests/global_header_system.test.mjs tests/order_id_management_system.test.mjs tests/brand_homepage.test.mjs tests/product_asset_hardening.test.mjs tests/master_platform_architecture.test.mjs tests/lib_unit_tests.test.mjs tests/edge_cases.test.mjs tests/bengaluru_purchase_flow.test.mjs"
+  },
+  "dependencies": {
+    "@react-three/drei": "^10.7.8",
+    "@react-three/fiber": "^9.7.0",
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.3",
+    "next": "16.3.1",
+    "razorpay": "^2.9.8",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "three": "^0.185.1",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/three": "^0.185.4",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

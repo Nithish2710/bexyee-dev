@@ -1,0 +1,282 @@
+{
+  "totalTests": 55,
+  "passedTests": 55,
+  "failedTests": 0,
+  "testCases": [
+    {
+      "name": "Product with launch status DRAFT",
+      "status": "PASS",
+      "duration": 2431
+    },
+    {
+      "name": "Product with launch status READY",
+      "status": "PASS",
+      "duration": 1192
+    },
+    {
+      "name": "Product with launch status SCHEDULED",
+      "status": "PASS",
+      "duration": 1127
+    },
+    {
+      "name": "Product with launch status LIVE",
+      "status": "PASS",
+      "duration": 1114
+    },
+    {
+      "name": "Product with launch status PAUSED",
+      "status": "PASS",
+      "duration": 1116
+    },
+    {
+      "name": "Product with launch status ENDED",
+      "status": "PASS",
+      "duration": 935
+    },
+    {
+      "name": "Product with launch status ARCHIVED",
+      "status": "PASS",
+      "duration": 939
+    },
+    {
+      "name": "ACTIVE product + LIVE launch",
+      "status": "PASS",
+      "duration": 2500
+    },
+    {
+      "name": "ACTIVE product + DRAFT launch",
+      "status": "PASS",
+      "duration": 1848
+    },
+    {
+      "name": "ACTIVE product + PAUSED launch",
+      "status": "PASS",
+      "duration": 1751
+    },
+    {
+      "name": "ACTIVE product + SCHEDULED launch",
+      "status": "PASS",
+      "duration": 1882
+    },
+    {
+      "name": "ACTIVE product + ENDED launch",
+      "status": "PASS",
+      "duration": 2533
+    },
+    {
+      "name": "ACTIVE product + ARCHIVED launch",
+      "status": "PASS",
+      "duration": 1806
+    },
+    {
+      "name": "DRAFT product + LIVE launch",
+      "status": "PASS",
+      "duration": 1269
+    },
+    {
+      "name": "DRAFT product + DRAFT launch",
+      "status": "PASS",
+      "duration": 1245
+    },
+    {
+      "name": "DRAFT product + PAUSED launch",
+      "status": "PASS",
+      "duration": 1331
+    },
+    {
+      "name": "DRAFT product + SCHEDULED launch",
+      "status": "PASS",
+      "duration": 1467
+    },
+    {
+      "name": "DRAFT product + ENDED launch",
+      "status": "PASS",
+      "duration": 1332
+    },
+    {
+      "name": "DRAFT product + ARCHIVED launch",
+      "status": "PASS",
+      "duration": 1364
+    },
+    {
+      "name": "ARCHIVED product + LIVE launch",
+      "status": "PASS",
+      "duration": 1177
+    },
+    {
+      "name": "ARCHIVED product + DRAFT launch",
+      "status": "PASS",
+      "duration": 1158
+    },
+    {
+      "name": "ARCHIVED product + PAUSED launch",
+      "status": "PASS",
+      "duration": 1401
+    },
+    {
+      "name": "ARCHIVED product + SCHEDULED launch",
+      "status": "PASS",
+      "duration": 1321
+    },
+    {
+      "name": "ARCHIVED product + ENDED launch",
+      "status": "PASS",
+      "duration": 1515
+    },
+    {
+      "name": "ARCHIVED product + ARCHIVED launch",
+      "status": "PASS",
+      "duration": 1369
+    },
+    {
+      "name": "Product with purchase mode BUY_NOW",
+      "status": "PASS",
+      "duration": 2201
+    },
+    {
+      "name": "Product with purchase mode PREBOOK",
+      "status": "PASS",
+      "duration": 2026
+    },
+    {
+      "name": "Well-stocked inventory (100 units)",
+      "status": "PASS",
+      "duration": 1930
+    },
+    {
+      "name": "Low stock inventory (5 units)",
+      "status": "PASS",
+      "duration": 1916
+    },
+    {
+      "name": "Very low stock inventory (1 units)",
+      "status": "PASS",
+      "duration": 2017
+    },
+    {
+      "name": "Out of stock inventory (0 units)",
+      "status": "PASS",
+      "duration": 2001
+    },
+    {
+      "name": "Add product to cart",
+      "status": "PASS",
+      "duration": 1919
+    },
+    {
+      "name": "Add multiple quantities to cart",
+      "status": "PASS",
+      "duration": 1629
+    },
+    {
+      "name": "Add same product in different size",
+      "status": "PASS",
+      "duration": 1890
+    },
+    {
+      "name": "All sizes available",
+      "status": "PASS",
+      "duration": 1868
+    },
+    {
+      "name": "Only M and L available",
+      "status": "PASS",
+      "duration": 1801
+    },
+    {
+      "name": "Only S available",
+      "status": "PASS",
+      "duration": 1791
+    },
+    {
+      "name": "No sizes available",
+      "status": "PASS",
+      "duration": 2248
+    },
+    {
+      "name": "₹1000 with 5% GST",
+      "status": "PASS",
+      "duration": 1820
+    },
+    {
+      "name": "₹1799 with 12% GST",
+      "status": "PASS",
+      "duration": 1794
+    },
+    {
+      "name": "₹5000 with 18% GST",
+      "status": "PASS",
+      "duration": 1618
+    },
+    {
+      "name": "₹100 with 0% GST",
+      "status": "PASS",
+      "duration": 1725
+    },
+    {
+      "name": "Prebook with 100 unit prebook limit",
+      "status": "PASS",
+      "duration": 1782
+    },
+    {
+      "name": "Prebook with 50 unit prebook limit",
+      "status": "PASS",
+      "duration": 1723
+    },
+    {
+      "name": "Prebook with 10 unit prebook limit",
+      "status": "PASS",
+      "duration": 1909
+    },
+    {
+      "name": "Prebook with 1 unit prebook limit",
+      "status": "PASS",
+      "duration": 1630
+    },
+    {
+      "name": "Filter by city name",
+      "status": "PASS",
+      "duration": 1183
+    },
+    {
+      "name": "Filter by collection",
+      "status": "PASS",
+      "duration": 1259
+    },
+    {
+      "name": "Search product by name",
+      "status": "PASS",
+      "duration": 1033
+    },
+    {
+      "name": "Admin can view product dashboard",
+      "status": "PASS",
+      "duration": 137
+    },
+    {
+      "name": "Admin can view products list",
+      "status": "PASS",
+      "duration": 131
+    },
+    {
+      "name": "Non-existent product returns 404 message",
+      "status": "PASS",
+      "duration": 410
+    },
+    {
+      "name": "Product with no inventory shows correctly",
+      "status": "PASS",
+      "duration": 1951
+    },
+    {
+      "name": "Product with no launch shows as LIVE (fallback)",
+      "status": "PASS",
+      "duration": 1704
+    },
+    {
+      "name": "Concurrent add-to-cart requests",
+      "status": "PASS",
+      "duration": 1865
+    }
+  ]
+}

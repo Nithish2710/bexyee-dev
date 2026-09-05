@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gradient for Outer Rim -->
+    <radialGradient id="rimGrad" cx="35%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#4a4742"/>
+      <stop offset="45%" stop-color="#242321"/>
+      <stop offset="80%" stop-color="#121110"/>
+      <stop offset="100%" stop-color="#080807"/>
+    </radialGradient>
+
+    <!-- Bevel Highlights -->
+    <linearGradient id="bevelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7a756d" stop-opacity="0.8"/>
+      <stop offset="30%" stop-color="#2a2927" stop-opacity="0.3"/>
+      <stop offset="70%" stop-color="#141312" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6e685f" stop-opacity="0.5"/>
+    </linearGradient>
+
+    <!-- Inner Coin Face -->
+    <radialGradient id="faceGrad" cx="40%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#1e1d1b"/>
+      <stop offset="60%" stop-color="#10100f"/>
+      <stop offset="100%" stop-color="#090908"/>
+    </radialGradient>
+
+    <!-- Metallic Brushed Texture Filter -->
+    <filter id="metalNoise" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.1   0 0 0 0 0.1   0 0 0 0 0.1  0 0 0 0.08 0" in="noise" result="coloredNoise"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Drop Shadow -->
+  <circle cx="200" cy="204" r="176" fill="#000000" opacity="0.6" filter="blur(10px)"/>
+
+  <!-- Outer Rim Base -->
+  <circle cx="200" cy="200" r="176" fill="url(#rimGrad)" stroke="#3a3835" stroke-width="1.5"/>
+
+  <!-- Outer Bevel Ring -->
+  <circle cx="200" cy="200" r="172" fill="none" stroke="url(#bevelGrad)" stroke-width="6"/>
+
+  <!-- Milled Edge Grooves / Teeth -->
+  <g stroke="#1a1918" stroke-width="1.5" opacity="0.6">
+    <circle cx="200" cy="200" r="166" fill="none" stroke="#2c2a27" stroke-width="2" stroke-dasharray="3, 4"/>
+  </g>
+
+  <!-- Step-down Inset Bevel -->
+  <circle cx="200" cy="200" r="158" fill="url(#faceGrad)" stroke="#383531" stroke-width="2"/>
+
+  <!-- Inner Architectural Track Line -->
+  <circle cx="200" cy="200" r="144" fill="none" stroke="#2a2927" stroke-width="1" stroke-dasharray="12, 4"/>
+
+  <!-- Outer Circular Text -->
+  <path id="textCircle" d="M 72,200 A 128,128 0 1,1 328,200 A 128,128 0 1,1 72,200" fill="none"/>
+  <text font-family="'Space Mono', monospace" font-size="9" fill="#7a756d" letter-spacing="4px" font-weight="700">
+    <textPath href="#textCircle" startOffset="50%" text-anchor="middle">
+      UNIFORM ARCHITECTURE • 12.9716° N 77.5946° E • STUDIO EDITION
+    </textPath>
+  </text>
+
+  <!-- Center Metallic Relief Platform -->
+  <circle cx="200" cy="200" r="92" fill="#141312" stroke="#2e2c29" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="88" fill="none" stroke="#1f1e1c" stroke-width="1"/>
+
+  <!-- BEXYEE Core Logo Relief -->
+  <g transform="translate(200, 194)">
+    <text x="0" y="8" font-family="'Space Mono', monospace" font-size="28" fill="#ede9e1" font-weight="700" letter-spacing="-2px" text-anchor="middle">
+      BEXYEE
+    </text>
+    <!-- Red Brand Dot -->
+    <circle cx="56" cy="4" r="3.5" fill="#e52b20"/>
+  </g>
+
+  <!-- Subtitle & Coordinates Stamp -->
+  <text x="200" y="224" font-family="'Space Mono', monospace" font-size="7.5" fill="#e52b20" letter-spacing="3px" text-anchor="middle" font-weight="700">
+    DROP 001 // HEAVYWEIGHT
+  </text>
+
+  <text x="200" y="238" font-family="'Space Mono', monospace" font-size="6.5" fill="#5a5650" letter-spacing="2px" text-anchor="middle">
+    320 GSM SUPER LOOPKNIT
+  </text>
+
+  <!-- Center Micro Coordinates Crosshair -->
+  <path d="M 200,102 L 200,108 M 200,292 L 200,298 M 102,200 L 108,200 M 292,200 L 298,200" stroke="#e52b20" stroke-width="1.5" opacity="0.8"/>
+</svg>

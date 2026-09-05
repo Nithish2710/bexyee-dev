@@ -1,0 +1,58 @@
+<svg width="1440" height="900" viewBox="0 0 1440 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Studio Ambient Vignette Gradient -->
+    <radialGradient id="studioVignette" cx="50%" cy="45%" r="65%" fx="50%" fy="45%">
+      <stop offset="0%" stop-color="#141413" stop-opacity="0.9" />
+      <stop offset="60%" stop-color="#0A0A09" stop-opacity="0.98" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1.0" />
+    </radialGradient>
+
+    <!-- Subtle Technical Grid Pattern -->
+    <pattern id="technicalGrid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-opacity="0.04" />
+      <circle cx="60" cy="60" r="1" fill="#FFFFFF" fill-opacity="0.08" />
+    </pattern>
+
+    <!-- Architectural Framing Gradients -->
+    <linearGradient id="framingGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E52B20" stop-opacity="0.06" />
+      <stop offset="50%" stop-color="#FFFFFF" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Dark Canvas -->
+  <rect width="1440" height="900" fill="#080807" />
+
+  <!-- Radial Vignette -->
+  <rect width="1440" height="900" fill="url(#studioVignette)" />
+
+  <!-- Studio Spatial Grid -->
+  <rect width="1440" height="900" fill="url(#technicalGrid)" />
+
+  <!-- Geometric Floor Axis & Crosshairs -->
+  <g opacity="0.15">
+    <!-- Horizontal Horizon Line -->
+    <line x1="0" y1="580" x2="1440" y2="580" stroke="#FFFFFF" stroke-width="0.75" stroke-dasharray="4 8" />
+    
+    <!-- Central Alignment Crosshair -->
+    <line x1="720" y1="200" x2="720" y2="700" stroke="#FFFFFF" stroke-width="0.5" stroke-dasharray="2 6" />
+    
+    <!-- Spatial Coordinate Brackets -->
+    <path d="M 660 300 L 650 300 L 650 310" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M 780 300 L 790 300 L 790 310" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M 660 600 L 650 600 L 650 590" stroke="#FFFFFF" stroke-width="1" fill="none" />
+    <path d="M 780 600 L 790 600 L 790 590" stroke="#FFFFFF" stroke-width="1" fill="none" />
+  </g>
+
+  <!-- Technical Studio Monospace Coordinates -->
+  <g opacity="0.2" fill="#FFFFFF" font-family="monospace" font-size="9" letter-spacing="2">
+    <text x="80" y="820">BEXYEE APPAREL LABS // STUDIO STAGE 01</text>
+    <text x="80" y="840">SYS: 1440x900 // CALIBRATED OPTICAL ZERO</text>
+    <text x="1200" y="820" text-anchor="end">GRID: 60MM TECHNICAL</text>
+    <text x="1200" y="840" text-anchor="end">ENV: NEUTRAL OBSIDIAN</text>
+  </g>
+
+  <!-- Ambient Stage Light Center Glow -->
+  <circle cx="720" cy="450" r="320" fill="url(#framingGlow)" filter="blur(40px)" />
+</svg>
