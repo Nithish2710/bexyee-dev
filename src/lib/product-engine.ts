@@ -471,6 +471,7 @@ export async function getProductExperienceData(
     fulfillmentEstimate?: string | null;
     sizeLimits?: Record<"S" | "M" | "L" | "XL", number>;
     prebookLimit?: number;
+    backgroundType?: ProductBackgroundType;
   } = {};
 
   if (launchRow?.utm_campaign) {

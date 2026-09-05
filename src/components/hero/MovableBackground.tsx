@@ -40,7 +40,7 @@ export function MovableBackground({
   const neutralStudioFallback = "/assets/environments/bexyee-studio-neutral.svg";
   
   let activeBg = "";
-  if (!isNone && backgroundType !== "NONE") {
+  if (!isNone) {
     activeBg = backgrounds?.desktop || (backgroundType === "DEFAULT_STUDIO" ? neutralStudioFallback : "");
     if (deviceType === "mobile" && backgrounds?.mobile) {
       activeBg = backgrounds.mobile;

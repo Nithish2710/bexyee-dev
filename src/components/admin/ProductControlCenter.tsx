@@ -20,10 +20,17 @@ export type ProductControlCenterProps = {
     metadata?: Record<string, unknown>;
   }>;
   analyticsData?: {
-    totalRevenuePaise: number;
-    totalUnitsSold: number;
-    selloutPercentage: number;
-    cartConversionRate: number;
+    views?: number;
+    addToCart?: number;
+    checkoutStarts?: number;
+    purchases?: number;
+    revenuePaise?: number;
+    unitsSold?: number;
+    refundsCount?: number;
+    totalRevenuePaise?: number;
+    totalUnitsSold?: number;
+    selloutPercentage?: number;
+    cartConversionRate?: number;
   };
 };
 
@@ -35,9 +42,19 @@ type SectionTab =
   | "LAUNCH"
   | "PURCHASE_MODE"
   | "PREVIEW"
-  | "PERFORMANCE";
+  | "PERFORMANCE"
+  | "ACTIVITY";
 
 type ViewportKey = "1920" | "1440" | "1024" | "768" | "414" | "375";
+
+const VIEWPORTS: Record<ViewportKey, { label: string; width: string; height: string }> = {
+  "1920": { label: "1920px (Desktop)", width: "100%", height: "800px" },
+  "1440": { label: "1440px (Laptop)", width: "100%", height: "760px" },
+  "1024": { label: "1024px (Tablet)", width: "1024px", height: "700px" },
+  "768": { label: "768px (Tablet Portrait)", width: "768px", height: "700px" },
+  "414": { label: "414px (Mobile Large)", width: "414px", height: "700px" },
+  "375": { label: "375px (Mobile)", width: "375px", height: "700px" },
+};
 
 export function ProductControlCenter({
   initialProduct,
@@ -1561,27 +1578,27 @@ export function ProductControlCenter({
               <h2 style={{ margin: "4px 0 0", fontSize: "18px" }}>Live Product Performance</h2>
             </div>
 
-            {analyticsData && analyticsData.views > 0 ? (
+            {analyticsData && (analyticsData.views || 0) > 0 ? (
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "16px" }}>
                 <div style={{ border: "1px solid #E5E5E5", padding: "20px" }}>
                   <span style={{ fontSize: "10px", color: "#777777" }}>VIEWS</span>
-                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.views}</div>
+                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.views ?? 0}</div>
                 </div>
                 <div style={{ border: "1px solid #E5E5E5", padding: "20px" }}>
                   <span style={{ fontSize: "10px", color: "#777777" }}>ADD TO CART</span>
-                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.addToCart}</div>
+                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.addToCart ?? 0}</div>
                 </div>
                 <div style={{ border: "1px solid #E5E5E5", padding: "20px" }}>
                   <span style={{ fontSize: "10px", color: "#777777" }}>CHECKOUTS</span>
-                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.checkoutStarts}</div>
+                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.checkoutStarts ?? 0}</div>
                 </div>
                 <div style={{ border: "1px solid #E5E5E5", padding: "20px" }}>
                   <span style={{ fontSize: "10px", color: "#777777" }}>PURCHASES</span>
-                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.purchases}</div>
+                  <div style={{ fontSize: "28px", fontWeight: 900 }}>{analyticsData.purchases ?? 0}</div>
                 </div>
                 <div style={{ border: "1px solid #E5E5E5", padding: "20px" }}>
                   <span style={{ fontSize: "10px", color: "#777777" }}>REVENUE</span>
-                  <div style={{ fontSize: "28px", fontWeight: 900 }}>₹{(analyticsData.revenuePaise / 100).toLocaleString("en-IN")}</div>
+                  <div style={{ fontSize: "28px", fontWeight: 900 }}>₹{(((analyticsData.revenuePaise ?? 0)) / 100).toLocaleString("en-IN")}</div>
                 </div>
               </div>
             ) : (
